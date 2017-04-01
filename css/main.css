@@ -7,15 +7,26 @@
 header {
 	margin-top:10px;
 }
+nav a {
+	text-decoration: none;
+	color:white;
+}
 
 /* Classes */
 .row::after { 
 	clear:both; 
+	display:block;
 }
 .nav-table {
 	width:100%;
 	text-align:center;
+	background-color:#2d4262;
 }
+.nav-table td:hover {
+	background-color:#53BBEE;
+}
+.nav-table td { width:25%; }
+
 .text-right { 
 	text-align:right;
 }
@@ -33,6 +44,7 @@ header {
 	padding-right:10px; 
 	padding-left:10px; 
 	padding-top:15px;
+	height:100%;
 }
 .i-area img {
 	width:80px;
@@ -49,12 +61,26 @@ header {
 	float: left;
 	width: 100%;
 }
+.active {
+	background-color:#53BBEE;
+	color:#F47524;
+}
+
 /* specific colors */
 .orange-bg {
 	background-color:#F47524;
 }
 .celeste-bg {
 	background-color:#53BBEE;
+}
+.green-bg {
+	background-color:#8EBA43;
+}
+.pine-bg {
+	background-color:#34675C;
+}
+.legendary-bg {
+	background-color:#011A27;
 }
 
 /* horizontal mobile view */
@@ -72,5 +98,5 @@ header {
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 
-	#menu { margin-top:40px; margin-bottom:50px; }
+	#menu { margin-top:30px; margin-bottom:50px; }
 }
